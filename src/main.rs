@@ -1,3 +1,8 @@
+use kkey::app::App;
+
 fn main() {
-    println!("Hello, world!");
+    let mut app = App::new();
+    while app.is_open {
+        app.draw();
+    }
 }
